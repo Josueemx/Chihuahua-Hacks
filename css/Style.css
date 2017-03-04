@@ -4,8 +4,47 @@
     height: 30%;
 }
 
-@media only screen and (min-width : 767px) { /*aqui creo que resolución cambia porque e jode menu en mediano*/
-    .collapse{
+.WhiteBackground{
+    background: white !important;
+    color: black !important;
+}
+
+.GreenBackground{
+    background: #18BC9C !important;
+    color: white !important;
+}
+
+.Answers{
+    display: none;
+}
+
+@media only screen and (max-width : 995px) {
+    .navbar-custom .navbar-nav li a {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .NavbarElements{
+        float: right;
+    }
+}
+
+@media only screen and (min-width : 767px) { 
+    /*.collapse{
         display: initial;
+    }
+    
+    .DisableCollapse{
+        -webkit-transition: none;
+        transition: none;
+    } esto se quedo asi porque no va a hacer necesario (creo)*/
+}
+
+@media only screen and (max-width : 767px) {
+    .navbar-custom .navbar-nav li a {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
